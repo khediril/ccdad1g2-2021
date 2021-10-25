@@ -1,0 +1,15 @@
+ {% extends "base.html.twig" %}
+
+ {% block stylesheet %}
+    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
+ {% endblock %}
+{% block title %}test1{% endblock %}
+ {% block body %}
+     <h1> {{ name }}</h1>
+     <a href="{{ path('test2',{"nom":name,"prenom":"ali"})}}">aller à la page test2</a>
+ 
+ {% endblock %}
+    
+
+
+
